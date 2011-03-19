@@ -1,0 +1,123 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="positiveInteger">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0">
+			</xs:minInclusive>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="statistics">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="url" type="xs:string" />
+				<xs:element name="rows">
+					<xs:complexType>
+						<xs:attribute name="total" type="positiveInteger">
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="fractions">
+					<xs:complexType>
+						<xs:attribute name="total" type="positiveInteger">
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="subscripts" maxOccurs="1" minOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="subscript" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="first" maxOccurs="1" minOccurs="1">
+											<xs:complexType mixed="true">
+												<xs:attribute name="type" type="xs:string">
+												</xs:attribute>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="second" maxOccurs="1" minOccurs="1">
+											<xs:complexType mixed="true">
+												<xs:attribute name="type" type="xs:string"></xs:attribute>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="total" type="positiveInteger">
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="total" type="positiveInteger">
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="supscripts" maxOccurs="1" minOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="supscript" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="first" maxOccurs="1" minOccurs="1">
+											<xs:complexType mixed="true">
+												<xs:attribute name="type" type="xs:string">
+												</xs:attribute>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="second" maxOccurs="1" minOccurs="1">
+											<xs:complexType mixed="true">
+												<xs:attribute name="type" type="xs:string"></xs:attribute>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="total" type="positiveInteger">
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="total" type="positiveInteger">
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="identifiers" maxOccurs="1" minOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="identifier" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType mixed="true">
+									<xs:attribute name="total" type="positiveInteger">
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="total" type="positiveInteger">
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="operators" maxOccurs="1" minOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="operator" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType mixed="true">
+									<xs:attribute name="total" type="positiveInteger">
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="total" type="positiveInteger">
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="numbers" maxOccurs="1" minOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="number" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType mixed="true">
+									<xs:attribute name="total" type="positiveInteger">
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="total" type="positiveInteger">
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE statistics SYSTEM  "Statistics.dtd">
+<statistics>
+	<url>file:/home/stanvp/Workspace/XMLCourse/mathml/bin/resources/RationalIntegral.xml</url>
+	<rows total="40" />
+	<fractions total="23" />
+	<subscripts total="6">
+		<subscript total="1">
+			<first type="string">I</first>
+			<second type="string">n</second>
+		</subscript>
+		<subscript total="5">
+			<first type="string">I</first>
+			<second type="string">n-1</second>
+		</subscript>
+	</subscripts>
+	<supscripts total="55">
+		<supscript total="1">
+			<first type="string">row</first>
+			<second type="string">-n + 1</second>
+		</supscript>
+		<supscript total="28">
+			<first type="string">a</first>
+			<second type="number">2</second>
+		</supscript>
+		<supscript total="16">
+			<first type="string">x</first>
+			<second type="number">2</second>
+		</supscript>
+		<supscript total="4">
+			<first type="string">row</first>
+			<second type="string">n-1</second>
+		</supscript>
+		<supscript total="6">
+			<first type="string">row</first>
+			<second type="string">n</second>
+		</supscript>
+	</supscripts>
+	<identifiers total="73">
+		<identifier total="2">2</identifier>
+		<identifier total="2">-n</identifier>
+		<identifier total="5">n-1</identifier>
+		<identifier total="28">a</identifier>
+		<identifier total="3">n</identifier>
+		<identifier total="6">I</identifier>
+		<identifier total="27">x</identifier>
+	</identifiers>
+	<operators total="110">
+		<operator total="1">-n + 1</operator>
+		<operator total="9">\x222b</operator>
+		<operator total="4">n-1</operator>
+		<operator total="9">\x2146</operator>
+		<operator total="6">n</operator>
+		<operator total="16">+</operator>
+		<operator total="17">(</operator>
+		<operator total="17">)</operator>
+		<operator total="12">\x2062</operator>
+		<operator total="10">\x2212</operator>
+		<operator total="9">=</operator>
+	</operators>
+	<numbers total="68">
+		<number total="50">2</number>
+		<number total="18">1</number>
+	</numbers>
+</statistics>

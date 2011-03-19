@@ -1,0 +1,39 @@
+<!ELEMENT statistics (url,rows,fractions,subscripts,supscripts,identifiers,operators,numbers)>
+<!ELEMENT url (#PCDATA)>
+
+<!ELEMENT rows EMPTY>
+<!ATTLIST rows total CDATA #REQUIRED>
+
+<!ELEMENT fractions EMPTY>
+<!ATTLIST fractions total CDATA #REQUIRED>
+
+<!ELEMENT subscripts (subscript*)>
+<!ATTLIST subscripts total CDATA #REQUIRED>
+<!ELEMENT subscript (first,second)>
+<!ATTLIST subscript total CDATA #REQUIRED>
+
+<!ELEMENT supscripts (supscript*)>
+<!ATTLIST supscripts total CDATA #REQUIRED>
+<!ELEMENT supscript (first,second)>
+<!ATTLIST supscript total CDATA #REQUIRED>
+
+<!ELEMENT identifiers (identifier*)>
+<!ATTLIST identifiers total CDATA #REQUIRED>
+<!ELEMENT identifier (#PCDATA)>
+<!ATTLIST identifier total CDATA #REQUIRED>
+
+<!ELEMENT operators (operator*)>
+<!ATTLIST operators total CDATA #REQUIRED>
+<!ELEMENT operator (#PCDATA)>
+<!ATTLIST operator total CDATA #REQUIRED>
+
+<!ELEMENT numbers (number*)>
+<!ATTLIST numbers total CDATA #REQUIRED>
+<!ELEMENT number (#PCDATA)>
+<!ATTLIST number total CDATA #REQUIRED>
+
+<!ELEMENT first (#PCDATA)>
+<!ATTLIST first type (string|number) #REQUIRED>
+
+<!ELEMENT second (#PCDATA)>
+<!ATTLIST second type (string|number) #REQUIRED>

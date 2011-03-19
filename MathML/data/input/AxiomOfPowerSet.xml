@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math mode="display" xmlns="http://www.w3.org/1998/Math/MathML">
+	<mrow>
+		<mo rspace="0">&#x2200;</mo>
+		<mi>A</mi>
+		<mo lspace="mediummathspace" rspace="0">&#x2203;</mo>
+		<mi>P</mi>
+		<mo lspace="mediummathspace" rspace="0">&#x2200;</mo>
+		<mi>B</mi>
+		<mspace width="thinmathspace" />
+		<mfenced open="[" close="]">
+			<mrow>
+				<mi>B</mi>
+				<mo>&#x2208;</mo>
+				<mi>P</mi>
+				<mo lspace="1ex" rspace="1ex">&#x27FA;</mo>
+				<mo rspace="0">&#x2200;</mo>
+				<mi>C</mi>
+				<mspace width="thinmathspace" />
+				<mfenced>
+					<mrow>
+						<mi>C</mi>
+						<mo>&#x2208;</mo>
+						<mi>B</mi>
+						<mo>&#x21D2;</mo>
+						<mi>C</mi>
+						<mo>&#x2208;</mo>
+						<mi>A</mi>
+					</mrow>
+				</mfenced>
+			</mrow>
+		</mfenced>
+	</mrow>
+</math>

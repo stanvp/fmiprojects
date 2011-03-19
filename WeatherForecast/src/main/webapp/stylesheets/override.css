@@ -1,0 +1,102 @@
+/* Override here any style defined by web-app-theme */
+
+body #main,
+#header .centerer {
+    width: 900px;
+    float: none;
+    margin: 0 auto;
+}
+
+#header {
+    overflow: hidden;
+}
+
+#header h1 {
+  float: left;
+  width: 320px;
+}
+
+
+#header h3 {
+    color: #FFFFFF;
+    margin 15px 0;
+    float: left;
+    width: 120px;
+    margin: 15px 0;
+}
+
+#header #search {
+  float: left;
+  width: 450px;
+}
+
+#search .group {
+    float: left;
+    margin: 23px 6px;
+}
+
+#search .group button {
+    padding: 3px 10px 2px 6px;
+    height: 28px;
+}
+
+#search input.text_field {
+    padding: 3px;
+    height: 20px;
+}
+
+h2.title span.description {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+#main .forecast,
+#main .today {
+    float: left;
+    width: 420px;
+}
+
+#main .block .content .inner {
+    overflow: hidden;
+}
+
+.today .picture {
+    position: relative;
+}
+.today .picture strong {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.today ul li {
+	margin: 5px 0 5px 15px;
+}
+
+.forecast ul {
+	list-style: none;
+	} 
+
+.forecast ul li {
+    float: left;
+    width: 160px;
+    clear: none;
+    margin: 0 20px 20px 0;
+    list-style: none;
+}
+
+.forecast ul li .item {
+    margin: 0;
+}
+
+.forecast .item ul li {
+    float: none;
+    width: auto;
+    clear: none;
+    margin: 0;	
+    list-style: circle inside;
+}
+
+.ui-autocomplete-loading { background: white url('../images/ui-anim_basic_16x16.gif') right center no-repeat; }
