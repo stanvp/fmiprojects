@@ -1,0 +1,1 @@
+Application that generates statistics for MathML documents. The statistical data is serialized to an xml document that is validated with DTD and XSchema. For more information see docs/XML_Project_Documentation.pdf.
